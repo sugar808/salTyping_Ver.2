@@ -9,16 +9,30 @@
 </head>
 <body>
     <main>
-        <div>
-            <h2><span id="q">ここに問題が表示されます。</span></h2>
-            <h4><span id="pressedRoman">ここに入力したローマ字が表示されます。</span>
-                <span id="correctRoman"></span>
-                <span class="caret"></span>
+        <div id="frame1">
+            <h2><span id="q">ここに問題が表示されます</span></h2>
+            <h4 class="roman_box">
+                <span id="pressedRoman"></span>
+                <span id="correctRoman" class="animation2">スペースキーを押してスタート</span>
+                <span id="caret" hidden></span>
             </h4>
+            <h4>正打：<span id="show_correct">0</span>回</h4>
+            <h4>ミス：<span id="show_wrong">0</span>回</h4>
+        </div>
+        <div id="frame2" hidden>
+            <h3 class="animation2">Rキーを押してリスタート</h3>
+            <h4>正打：<span id="result_correct">0</span>回</h4>
+            <h4>ミス：<span id="result_wrong">0</span>回</h4>
+            <div id="AI_frame1">
+                <h5>
+                    <ul id="AI_coments"></ul>
+                </h5>
+            </div>
         </div>
     </main>
 
-    <script src="./data/data.js"></script>
+    <script src="./data/romans.js"></script>
+    <script src="./data/audio.js"></script>
     <script src="./data/questions.js"></script>
     <script src="./main_engine.js"></script>
 </body>
