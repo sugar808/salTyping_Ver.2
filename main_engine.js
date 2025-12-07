@@ -24,7 +24,7 @@ const log_type1 = [
 let separator1, separator2, separator3, all;
 let correct = 0;
 let wrong = 0;
-let LIMIT_INDEX = 15;
+let LIMIT_INDEX = 2;
 let romanBuffer = '';
 let romanBuffer2 = '';
 let word = '';
